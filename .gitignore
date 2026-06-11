@@ -1,0 +1,22 @@
+# React
+frontend/project1/node_modules/
+backend/node_modules/
+# Python
+backend/venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+
+# DB
+*.db
+
+# Env
+.env
+backend/.env
+
+# Certificates
+backend/certificates/
+
+# Build
+frontend/project1/dist/
+frontend/project1/build/
