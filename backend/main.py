@@ -26,11 +26,12 @@ app = FastAPI()
 # Create tables
 Base.metadata.create_all(bind=engine)
 
-# CORS
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://unite-event-management.vercel.app/"
+        "https://unite-event-management.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
