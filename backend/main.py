@@ -29,7 +29,9 @@ Base.metadata.create_all(bind=engine)
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # React frontend allowed
+    allow_origins=[
+        "https://unite-event-management.vercel.app/"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
