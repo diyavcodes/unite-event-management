@@ -50,7 +50,7 @@ export default function Events() {
   }, []);
 
   useEffect(() => {
-    const socket = new WebSocket("ws://127.0.0.1:8000/ws");
+    const socket = new WebSocket("import.meta.env.VITE_WS_URL");
 
     socket.onmessage = () => {
       fetchEvents();
